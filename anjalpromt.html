@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        span{
+            border: 1px solid;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            
+        }
+        span{
+            background: url(anjal.PNG);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="aman" style="display: none;">
+    <h4>Bhavisya janne ke liye Neeche button Dabaye</h4>
+    <span></span><br>
+    <button onclick="anjal()">Play</button>
+    <audio src="lauda_ka_sarkar_hai.mp3" id="anjal"></audio>
+
+    </div>
+</body>
+<script>
+    var a=prompt("Enter karne ke liiye pass dale jo tumhara khas pass hai");
+    if(a==786907111)
+{
+    document.getElementById("aman").style.display="block"
+}
+else{
+    document.write("chii Bhai apna favourite password bhul gaya<br> fir se dal")
+}
+function anjal()
+{
+document.getElementById("anjal").play();
+}
+</script>
+</html>

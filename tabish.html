@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        span{
+            border: 1px solid;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            
+        }
+        span{
+            background: url(tabish.PNG);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="aman" style="display: none;">
+    <h4>Apne bare me kuch jane</h4>
+    <span></span><br>
+    <button onclick="anjal()">Play</button>
+    <audio src="howrah_ke_lauda.mp3" id="anjal"></audio>
+
+    </div>
+</body>
+<script>
+    var a=prompt("enter karne ke liye password hai  2+2 ka answer");
+    if(a==4)
+{
+    document.getElementById("aman").style.display="block"
+}
+else{
+    document.write("chii Bhai 2+2 bhi nhi ata<br>fir se dal ek bar")
+}
+function anjal()
+{
+document.getElementById("anjal").play();
+}
+</script>
+</html>

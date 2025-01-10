@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        span{
+            border: 1px solid;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            
+        }
+        span{
+            background: url(shakib.PNG);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="aman" style="display: none;">
+    <h4>dear shakib azmi apke liye do sabd sune </h4>
+    <span></span><br>
+    <button onclick="anjal()">Play</button>
+    <audio src="kya_re_bhik_mangiya.mp3" id="anjal"></audio>
+
+    </div>
+</body>
+<script>
+    var a=prompt("Enter karne ke liye apne gaav ka naam dal de chote akchar me");
+    if(a=="surhan")
+{
+    document.getElementById("aman").style.display="block"
+}
+else{
+    document.write("batao shakib bhai apne gav ka nam bhul gaye.<br>fir se dal")
+}
+function anjal()
+{
+document.getElementById("anjal").play();
+}
+</script>
+</html>

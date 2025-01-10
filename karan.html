@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        span{
+            border: 1px solid;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            
+        }
+        span{
+            background: url(karan.PNG);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .A{
+            background: url(karan2.PNG);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="aman" style="display: none;">
+    <h4>Bhavisya janne ke liye Neeche button Dabaye</h4>
+    <span></span><span class="A"></span><br>
+    <button onclick="anjal()">Play</button><button onclick="karan()">play 2</button>
+    <audio src="Recording.m4a" id="anjal"></audio>
+    <audio src="howrah_ke_lauda.mp3" id="anjall"></audio>
+
+    </div>
+</body>
+<script>
+    var a=prompt("Enter karne ke liiye apni current gf ka naam dalo");
+    if(a=="rubina")
+{
+    document.getElementById("aman").style.display="block"
+}
+else{
+    document.write("chii yar rubina ka naam dal")
+}
+function anjal()
+{
+document.getElementById("anjal").play();
+}
+function karan(){
+document.getElementById("anjall").play();
+}
+
+
+</script>
+</html>
